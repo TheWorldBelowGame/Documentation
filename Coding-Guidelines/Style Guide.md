@@ -12,6 +12,8 @@
 	1. [Braces](#braces)
 	2. [Parenthesis](#parenthesis)
 5. [Documentation](#documentation)
+	1. [Self-Documenting Code](#self-documenting-code)
+	2. [Comments](#comments)
 
 ### Abstract
 
@@ -65,7 +67,7 @@ Classes should be named using camel case with a capitalized first letter (ex. `M
 
 Variables should be named using camel case with a lowercase first letter (ex. `myVariableName`, `fooBarBaz`).
 
-**A note on Hungarian notation:** don't use it. It's outdated and archaic, and Visual Studio lets us see the type of a variable just by hovering over it, so it's also pointless. Variable names like `m_piSisterObjectID` are just confusing and make the code muddy. `sisterObjectID` tells us exactly what we need to know, and the rest should be inferred from the editor.
+*A note on Hungarian notation:* don't use it. It's outdated and archaic, and Visual Studio lets us see the type of a variable just by hovering over it, so it's also pointless. Variable names like `m_piSisterObjectID` are just confusing and make the code muddy. `sisterObjectID` tells us exactly what we need to know, and the rest should be inferred from the editor.
 
 ##### Constants
 
@@ -100,8 +102,10 @@ A developer should be able to tell what the code is doing just by looking at it.
 
 ##### Self-Documenting Code
 
-Ideally, code should be written in such a way that anyone who looks at it will understand how it works with minimal effort. Self-documenting code helps us achieve that effect by removing unnecessary comments, and keeping comments that help us actually understand the code. There are a few basic guidelines we can follow to help reduce comments and actually make the code more readable:
+Ideally, code should be written in such a way that anyone who looks at it will understand how it works with minimal effort. Self-documenting code helps us achieve that effect by removing unnecessary comments, and keeping comments that help us actually understand the code. In fact, the entire point of this document is to help us write self-documenting code. However, in the event that a section of code is **not** self-documenting, then it's time for...
 
-* **Use descriptive variable names.** Anyone looking at a variable should be able to tell what that variable's purpose is, solely by the name.
-* **Follow guidelines for code spacing.** Code that is smushed together with few spaces becomes unreadable very quickly. Equations that are separated to a readable degree go a long way towards maintaining readable code, which in turn allows us to more easily see what is happening in the code.
-* 
+##### Comments
+
+Comments should be descriptive but concise. They should describe what the code is doing, at a high-level. In other words, they should be explanations for why the code is the way it is. They should **not** be descriptions of *how* the code works, i.e we don't need a comment for every single line of code explaining how that lines works (if you think you do, it probably means your code is not (self-documenting!)[#self-documenting-code]
+
+Each class and method should have at least a short comment describing what it does and how it is intended to be used, unless that class/method is very small or only does one very obvious thing.
