@@ -71,9 +71,7 @@ Variables should be named using camel case with a lowercase first letter (ex. `m
 
 ##### Constants
 
-Generally, constants are written either in `ALL_UPPERCASE_WITH_UNDERSCORES` or with a leading 'k' as in `kConstantWithoutCapsLock`. We will prefer the latter, since the former looks gross.
-
-*NB: this is also a bit of a carry-over from C++, since C macros are traditionally written in CAPS_LOCK. This makes it hard to differentiate between a CAPS_LOCK_CONSTANT and a CAPS_LOCK_MACRO, so the leading 'k' is preferred.*
+Generally, constants are written either in `ALL_UPPERCASE_WITH_UNDERSCORES` or with a leading 'k' as in `kConstantWithoutCapsLock`. The former makes constants much more obvious and is preferred by some team members, so we will continue to use that format.
 
 ### Formatting
 
