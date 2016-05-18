@@ -59,27 +59,27 @@ int numCycles;	// Now we know this is counting the number of cycles
 int numWashCycles	// Even better, we know what KIND of cycle is being counted.
 ```
 
-##### Classes
+#### Classes
 
 Classes should be named using camel case with a capitalized first letter (ex. `MyClass`, `BaseClass`, `LongClassName`).
 
-##### Variables
+#### Variables
 
 Variables should be named using camel case with a lowercase first letter (ex. `myVariableName`, `fooBarBaz`).
 
 *A note on Hungarian notation:* don't use it. It's outdated and archaic, and Visual Studio lets us see the type of a variable just by hovering over it, so it's also pointless. Variable names like `m_piSisterObjectID` are just confusing and make the code muddy. `sisterObjectID` tells us exactly what we need to know, and the rest should be inferred from the editor.
 
-##### Constants
+#### Constants
 
 Generally, constants are written either in `ALL_UPPERCASE_WITH_UNDERSCORES` or with a leading 'k' as in `kConstantWithoutCapsLock`. The former makes constants much more obvious and is preferred by some team members, so we will continue to use that format.
 
 ### Formatting
 
-##### Braces
+#### Braces
 
 For namespaces, classes, enums and methods, prefer K&R style braces (i.e braces on their own line). For everything else, prefer opening braces on the same line as the statement. Closing braces should always be on their own line.
 
-##### Parenthesis
+#### Parenthesis
 
 Parenthesis should generally be on the same line as a statement. In the case of very long statements, parenthesis can follow the same rules as braces above. Example:
 
@@ -98,11 +98,11 @@ void ReallyLongMethodWithLotsOfParameters(
 
 A developer should be able to tell what the code is doing just by looking at it. This is made possible through the principles of *self-documenting code* and *commenting*.
 
-##### Self-Documenting Code
+#### Self-Documenting Code
 
 Ideally, code should be written in such a way that anyone who looks at it will understand how it works with minimal effort. Self-documenting code helps us achieve that effect by removing unnecessary comments, and keeping comments that help us actually understand the code. In fact, the entire point of this document is to help us write self-documenting code. However, in the event that a section of code is **not** self-documenting, then it's time for...
 
-##### Comments
+#### Comments
 
 Comments should be descriptive but concise. They should describe what the code is doing, at a high-level. In other words, they should be explanations for why the code is the way it is. They should **not** be descriptions of *how* the code works, i.e we don't need a comment for every single line of code explaining how that lines works (if you think you do, it probably means your code is not (self-documenting!)[#self-documenting-code]
 
